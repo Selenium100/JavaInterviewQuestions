@@ -1,45 +1,53 @@
 package javaInterviewProgrammimgs;
 
-public class Employee {
+public class EmployeeGetMaxSalary {
+	
 	String ename;
-	Integer eid;
+	String edept;
 	Integer salary;
 	
-	public Employee(String ename,Integer eid,Integer salary) {
+	
+	public EmployeeGetMaxSalary(String ename,String edept,Integer salary) {
 		this.ename=ename;
-		this.eid=eid;
+		this.edept=edept;
 		this.salary=salary;
 	}
+
 
 	public String getEname() {
 		return ename;
 	}
 
+
 	public void setEname(String ename) {
 		this.ename = ename;
 	}
 
-	public Integer getEid() {
-		return eid;
+
+	public String getEdept() {
+		return edept;
 	}
 
-	public void setEid(Integer eid) {
-		this.eid = eid;
+
+	public void setEdept(String edept) {
+		this.edept = edept;
 	}
+
 
 	public Integer getSalary() {
 		return salary;
 	}
 
+
 	public void setSalary(Integer salary) {
 		this.salary = salary;
 	}
 
+
 	@Override
 	public String toString() {
-		return "Employee [ename=" + ename + ", eid=" + eid + ", salary=" + salary + "]";
+		return "EmployeeGetMaxSalary [ename=" + ename + ", edept=" + edept + ", salary=" + salary + "]";
 	}
-
 	
 	
 
